@@ -4,7 +4,7 @@
   <code>instantpage</code>
   <version>1.0</version>
   <author>And</author>
-  <link>/</link>
+  <link>https://and.co.ua/products/opencart-instantpage/</link>
   <file path="catalog/controller/common/footer.php">
     <operation>
       <search><![CDATA[public function index() {]]></search>
