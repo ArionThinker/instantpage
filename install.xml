@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>And | Instantpage</name>
+  <code>instantpage</code>
+  <version>1.0</version>
+  <author>And</author>
+  <link>/</link>
+  <file path="catalog/controller/common/footer.php">
+    <operation>
+      <search><![CDATA[public function index() {]]></search>
+      <add position="after"><![CDATA[
+        if ($this->config->get('module_instant_page_status')) {
+            if ($this->config->get('module_instant_page_cdn')) {
+                $this->document->addScript('https://instant.page/5.2.0', 'footer');
+            } else {
+                $this->document->addScript('catalog/view/javascript/instantpage/instantpage.min.js', 'footer');
+            }
+        }
+      ]]></add>
+    </operation>
+  </file>
+</modification>

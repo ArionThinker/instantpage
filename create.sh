@@ -1,0 +1,1 @@
+zip -r instantpage-1.0.0.ocmod.zip upload install.xml
